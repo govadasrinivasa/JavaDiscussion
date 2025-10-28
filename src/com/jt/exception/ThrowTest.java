@@ -1,33 +1,48 @@
 package com.jt.exception;
 
+import java.util.EmptyStackException;
+import java.util.Stack;
+
 public class ThrowTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Second sec = new Second();
-		sec.calculate(10);
-	}
+        Stack<String> myStack = new Stack<>();
 
-}
+        // Attempting to pop from an empty stack will throw EmptyStackException
+        try {
+            System.out.println("Attempting to pop from an empty stack...");
+            if(myStack.size() == 0)
+            	throw new EmptyStackException(); // This line will throw EmptyStackException
+            else
+            	myStack.pop();
+        } catch (EmptyStackException e) {
+            System.out.println("Caught EmptyStackException: " + e.getMessage());
+        }
 
-class First {
-	
-	double getResult(int x) throws ArithmeticException, ArrayIndexOutOfBoundsException{
-		return 100/x;
-	}
-}
-class Second {
-	First f = new First();
-	double calculate(int x) {
-		double d = 0;
-		try {
-		d =  f.getResult(5);
-		System.out.println(d);
-		}catch(ArithmeticException ae) {
-			System.out.println(ae);
-		}finally {
-			System.out.println("mandatory block");
-		}
-		return d;
-	}
+        // Pushing some elements onto the stack
+        myStack.push("First Element");
+        myStack.push("Second Element");
+        System.out.println("Stack after pushing elements: " + myStack);
+
+        // Popping elements successfully
+        try {
+            String poppedElement = myStack.pop();
+            System.out.println("Popped: " + poppedElement);
+            poppedElement = myStack.pop();
+            System.out.println("Popped: " + poppedElement);
+        } catch (EmptyStackException e) {
+            System.out.println("Caught EmptyStackException during valid pops: " + e.getMessage());
+        }
+
+        // Attempting to peek at an empty stack
+        try {
+            System.out.println("Attempting to peek at an empty stack...");
+            if(myStack.size() == 0)
+            	throw new EmptyStackException(); // This line will throw EmptyStackException
+            else
+            	myStack.peek();
+        } catch (EmptyStackException e) {
+            System.out.println("Caught EmptyStackException when peeking: " + e.getMessage());
+        }
+    }
 }
