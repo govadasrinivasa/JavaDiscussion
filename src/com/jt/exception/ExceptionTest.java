@@ -4,7 +4,7 @@ public class ExceptionTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(0/100);
+		System.out.println(100/0);
 		int x[] = {15,3,7,8,3};
 		String str = "Pune";
 		try {
@@ -12,7 +12,8 @@ public class ExceptionTest {
 			System.out.println(100/0);	
 			for(int i=0;i<10;i++)
 				System.out.println(x[i]);
-		}catch(ArithmeticException ae) {
+		}
+		catch(ArithmeticException ae) {
 			System.out.println("ArithmeticException Exception"+ae.getMessage());
 		}catch(ArrayIndexOutOfBoundsException aiob) {
 			System.out.println("ArrayIndexOutOfBoundsException Exception"+aiob.getMessage());

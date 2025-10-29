@@ -1,0 +1,131 @@
+Languages -- Java
+				multi-threading, race conditions, deadlock, semaphores
+				Heap/Thread dump analysis, Startup parameter tuning and Garbage collections
+			 Python
+				
+Scripting -- 
+	React Js - 
+	Next Js - 
+	Node Js - 
+	Typescript -
+	Angular - 
+	JavaScript - 
+	Angular JS - 
+	
+NoSQL -- 
+	Cassandra - 
+	Mongo DB - 
+	Elastic -
+	Hadoop -
+Database -- 
+	Postgres - 
+	Sybase - 
+	DB2 - 
+	My SQL - 
+	Oracle - 
+	MS SQLServer
+	
+API Gateway
+		Apigee
+			Deployment apigee platform : Apigee SaaS / Hybrid / Microgateway
+			APIGEE EDGE platform and API proxy development
+			APIGEE OPDK on-premise, debugging and troubleshooting EDGE components
+			APIGEE Analytics both outbox / custom reports
+			Publish API product to APIGEE developer portal
+			Apigee Platform - policies like Service Callouts, Extensions, Mediation, Security implementations using OAuth.
+			APIGEE Hybrid deployments & exposure to related experience
+		AWS Gateway
+DevOps
+	CI/CD Pipeline and AppDynamics, Bitbucket Versioning, CI/CD Tools (Jenkins, Maven, Bitbucket, Nexus).
+Spark and cloud databases (Snowflake, BigQuery, DeltaLake), Akka 
+Stream processing frameworks -- (Kafka, Kinesis, EventHub, Google Pub/Sub) 
+Machine Learning(e.g. MLFlow, Sagemaker) and AI 
+
+Ujjwal chaurasia story telling
+Container Technologies -- Docker, Redis, Kubernetes, Docker Swarm, OpenShift, PCF
+Fast API,
+Grafana
+
+Spinnaker
+
+In memory -- MEMSQL, Ignite
+data structures, algorithms
+OAuth
+
+Splunk, Sumologic, ELK stack, Loggly etc.
+
+DMS, ActiveMQ
+
+Tableau, Looker, Databricks SQLAnalytics, Power BI.
+Data Analytics (e.g. Dash, Shiny, Flask)
+
+DevSecOps
+	IaC, CI/CD, TDD/BDD, Monitoring/Alerting/Logging
+	Ansible, Chef, Puppet
+Enterprise Platform 
+	ArchiMate, LeanUI, Sparx
+
+ElasticSearch or OpenSearch.
+Webservices
+
+Snaplogic, Dynatrace, Lambda
+Canary Deployment
+
+12-factor principles.
+
+Automated deployment pipelines and continuous integration/continuous deployment (CI/CD)
+
+Elasticsearch, Neo4j, Cassandra.
+
+AI/ML, Gen AI, LLM.
+
+APIs
+	Partner APIs, Composite APIs, Public APIs, REST APIs, GraphQL, JSON-RPC, SOAP APIs, XML-RPC, Calendar APIs, Class APIs, gRPC, Experience APIs, Open APIs, Cloud APIs
+
+API integration
+Digital Fraud that typically takes place via Banking Mobile Apps
+Native Apps and APIs (both Ingress & Egress)
+Threat Modeling Banking Mobile Apps & it's integrated ecosystem.
+blockchain, digital currencies, e-checks, ML
+Fraud Management solutions for Banking Mobile Apps
+
+Threat Modeling using frameworks of choice
+(OWASP Top 10 or similar), API Security & Mobile Security (Mobile OWASP Top 10)
+payment switches, event-streaming systems, file transfer systems.
+Data Classification, Asset Valuation, Threat Modeling, Security Requirements & Patterns
+
+Artificial Intellegence
+	Expert Systems
+	Natural Language Processing
+	Speech Recognition
+		Analog to Digital Converter
+		accents, slangs and mispronounciation
+	Machine Learning
+		Machine Learning algorithms use historical data as input to predict new output values.
+		Deep Learning
+		Types
+			Supervised Learning
+			Unsupervised Learning
+		Self Awareness
+		
+			Reinforcement Learning
+	Generative AI Tools
+	Artificial Neural Networks
+	Types
+		Reactive Machines
+		Limited memory
+		Theory of mind
+	AssemblyAI
+		
+vikram.narapa@gmail.com
+https://www.eenadu.net/telugu-news/business/lic-launches-amritbaal-insurance-plan-for-children/0103/124032572
+
+Useful Websites for Students | పాఠాల్లో డౌటా... ‘క్లిక్‌’ చేయండి!
+https://results.eenadu.net/news.aspx?newsid=17072024]
+
+https://eenadu-net-1.demo.sortd.mobi/webstory/these-are-the-negative-symptomps-for-unsucess/1721285435140
+
+- IaC using CloudFormation and Terraform
+- Containers Services (K8S, EKS, Fargate)
+- Enterprise integration patterns and practices (REST, event-driven architectures
+- Designing solutions using working with Ansible and Jenkins
