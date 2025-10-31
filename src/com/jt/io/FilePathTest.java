@@ -8,9 +8,8 @@ import java.nio.file.StandardOpenOption;
 
 public class FilePathTest {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		getPaths();
+	public static void main(String[] args) throws IOException {
+		createFileNDirectory();
 	}
 	
 	static void getPaths() {
@@ -25,7 +24,7 @@ public class FilePathTest {
 	}
 	
 	static void createFileNDirectory() {
-		Path filePath = Paths.get("Java21", "myfile.txt");
+		Path filePath = Paths.get("../Java21/myfile.txt");
 
         try {
             // Create a new file
@@ -42,12 +41,18 @@ public class FilePathTest {
             System.out.println("Content read from file: " + content);
 
             // Delete the file
-            Files.delete(filePath);
-            System.out.println("File deleted: " + filePath);
+//            Files.delete(filePath);
+//            System.out.println("File deleted: " + filePath);
 
         } catch (IOException e) {
             System.err.println("An I/O error occurred: " + e.getMessage());
         }
+	}
+	
+	static void readfilefromRelativeDirectory() throws IOException {
+//		File file = new File("\\Java21\\myfile.txt");
+		Path filePath = Paths.get("../Java21/myfile.txt");
+		System.out.println(Files.readString(filePath));
 	}
 
 }

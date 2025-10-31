@@ -12,7 +12,7 @@ public class StreamFileReadWrite {
 		
 		try {
 			in = new FileInputStream("Topics.txt");
-			out = new FileOutputStream("output.txt");
+			out = new FileOutputStream("C:\\Users\\sgovada\\softwares\\output.txt");
 			
 			int c;
 			while((c = in.read())!= -1) {

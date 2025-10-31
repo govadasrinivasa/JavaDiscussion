@@ -38,6 +38,7 @@ public class VarargsTest {
 		applyVarargs(str);
 	}
 	
+	// varargs
 	static void applyVarargs(String...strs) {
 		
 		for(String str:strs) {
