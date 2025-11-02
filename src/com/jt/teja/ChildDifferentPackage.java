@@ -5,8 +5,8 @@ import com.jt.sunil.Parent1;
 public class ChildDifferentPackage extends Parent1 {
 
 	public void showAccess() {
-        // System.out.println(privateVar); // ❌ private not accessible
-        // System.out.println(defaultVar); // ❌ default not accessible outside package
+        // System.out.println(privatemem); // ❌ private not accessible
+        // System.out.println(defaultmem); // ❌ default not accessible outside package
         System.out.println(protectedmem); // ✅ accessible because of inheritance
         System.out.println(publicmem);    // ✅ public always accessible
     }
@@ -21,3 +21,10 @@ public class ChildDifferentPackage extends Parent1 {
         child.showAccess();
     }
 }
+
+	//	| Modifier  | Same Class | Same Package | Subclass Same Package | Subclass Different Package | Other Package |
+	//	| --------- | ---------- | ------------ | --------------------- | -------------------------- | ------------- |
+	//	| private   | ✅ Yes      | ❌ No         | ❌ No                  | ❌ No                       | ❌ No          |
+	//	| default   | ✅ Yes      | ✅ Yes        | ✅ Yes                 | ❌ No                       | ❌ No          |
+	//	| protected | ✅ Yes      | ✅ Yes        | ✅ Yes                 | ✅ Yes (via inheritance)    | ❌ No          |
+	//	| public    | ✅ Yes      | ✅ Yes        | ✅ Yes                 | ✅ Yes                      | ✅ Yes         |
