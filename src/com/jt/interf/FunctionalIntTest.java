@@ -4,7 +4,7 @@ public class FunctionalIntTest {
 
 	public static void main(String[] args) {
 		
-		Caculation sum  = (num1, num2) -> num1 + num2; 
+		Caculation sum  = (num1, num2) -> num1 + num2;  // 1. parameters; lambda expression (->); logic;
 		System.out.println("Addition: " + sum.cal(10, 5));
 		
 		Caculation sub  = (num1, num2) -> num1 - num2; 

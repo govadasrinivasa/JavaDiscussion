@@ -9,6 +9,7 @@ public class CustomerTest {
 		// TODO Auto-generated method stub
 		System.out.println("Creating Customer Objects");
 		Customer customer1 = new Customer();
+		Customer customer4;
 		
 		customer1.setCname("Srinivas");
 		customer1.setEmail("abc@gmail.com");
@@ -17,6 +18,7 @@ public class CustomerTest {
 		
 		Customer customer2 = new Customer();
 		Customer customer3 = new Customer();
+		//customer4.getAddress();
 		
 		System.out.println();
 		Billing billing = new Billing();

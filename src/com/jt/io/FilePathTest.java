@@ -50,7 +50,6 @@ public class FilePathTest {
 	}
 	
 	static void readfilefromRelativeDirectory() throws IOException {
-//		File file = new File("\\Java21\\myfile.txt");
 		Path filePath = Paths.get("../Java21/myfile.txt");
 		System.out.println(Files.readString(filePath));
 	}

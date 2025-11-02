@@ -31,6 +31,12 @@ class Dog implements Animal {
 	public void sound() {
 		System.out.println("Dog barks");
 	}
+
+	@Override
+	public void music() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
 
@@ -40,6 +46,12 @@ class Cat implements Animal {
 	public void sound() {
 		System.out.println("Cat meows");
 	}
+
+	@Override
+	public void music() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
 
@@ -48,6 +60,12 @@ class Cow implements Animal {
 	@Override
 	public void sound() {
 		System.out.println("Cow moos");
+	}
+
+	@Override
+	public void music() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }
