@@ -13,7 +13,6 @@ public class ChildSamePackage extends Parent1 {
     	Parent1 parent = new Parent1();
         parent.showParent1Members();
         System.out.println();
-        
         ChildSamePackage child = new ChildSamePackage();
         System.out.println("Access from Child in SAME package:");
         child.showAccess();

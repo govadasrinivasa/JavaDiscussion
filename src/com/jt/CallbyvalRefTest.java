@@ -5,7 +5,6 @@ public class CallbyvalRefTest {
 	static int x = 10;
 	public static void main(String[] args) {
 		Student stu = new Student("Shyam");
-		System.out.print(stu.getName());
 		System.out.println(" " +x);
 		updateStudent(stu,x);
 		System.out.print(stu.getName());

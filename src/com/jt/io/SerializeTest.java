@@ -8,10 +8,13 @@ import java.io.Serializable;
 public class SerializeTest {
 
 	public static void main(String[] args) {
+		
 		Address address = new Address("Bangalore", "India");
         Employee emp = new Employee(101, "John Doe", 90000.50, address);
 
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("employee.ser"))) {
+        //try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("employee.ser"))) {
+        try {
+        	ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("employee.ser"));
             oos.writeObject(emp);
             System.out.println("✅ Object Serialized Successfully!");
         } catch (IOException e) {

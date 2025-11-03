@@ -1,6 +1,5 @@
 package com.jt;
 
-import java.lang.Math;
 import java.util.Date;
 
 public class CustomerTest {
@@ -33,6 +32,11 @@ class Customer { // Parent class
 	String mobile;
 	String email;
 	String address;
+	int x;
+	float y;
+	double z;
+	char a;
+	long l;
 	
 	public String getCname() {
 		return cname;
