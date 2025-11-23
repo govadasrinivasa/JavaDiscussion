@@ -13,7 +13,7 @@ public class CustomerSorter {
              break;
 
          case 2:
-             Collections.sort(customers, Comparator.comparing(Customers::getAddress));
+//             Collections.sort(customers, Comparator.comparing(Customers::getAddress));
              break;
 
          case 3:
@@ -38,10 +38,10 @@ public class CustomerSorter {
 
      Vector<Customers> customers = new Vector<>();
 
-     customers.add(new Customers("Ravi", "Hyderabad", 103, "Gold", 9876543210L));
-     customers.add(new Customers("Anjali", "Mumbai", 101, "Silver", 9988776655L));
-     customers.add(new Customers("Kiran", "Chennai", 102, "Platinum", 9123456780L));
-     customers.add(new Customers("Deepak", "Bangalore", 104, "Gold", 9087654321L));
+     customers.add(new Customers("Ravi", new Address("101","Kukatpally","Hyderabad","500072"), 103, "Gold", 9876543210L));
+     customers.add(new Customers("Anjali", new Address("102","Andheri","Mumbai","400005"), 101, "Silver", 9988776655L));
+     customers.add(new Customers("Kiran", new Address("103","OMR","Chennai","600012"), 102, "Platinum", 9123456780L));
+     customers.add(new Customers("Deepak", new Address("104","Yelahanka","Bengalurur","500045"), 104, "Gold", 9087654321L));
 
      Scanner sc = new Scanner(System.in);
 
@@ -71,44 +71,57 @@ public class CustomerSorter {
 
 //Customer class with required fields
 class Customers {
-private String customerName;
-private String address;
-private int customerId;
-private String plan;
-private long mobileNumber;
+	private String customerName;
+	private Address address;
+	private int customerId;
+	private String plan;
+	private long mobileNumber;
+	
+	public Customers(String customerName, Address address, int customerId, String plan, long mobileNumber) {
+	   this.customerName = customerName;
+	   this.address = address;
+	   this.customerId = customerId;
+	   this.plan = plan;
+	   this.mobileNumber = mobileNumber;
+	}
+	
+	public String getCustomerName() {
+	   return customerName;
+	}
+	
+	public Address getAddress() {
+	   return address;
+	}
+	
+	public int getCustomerId() {
+	   return customerId;
+	}
+	
+	public String getPlan() {
+	   return plan;
+	}
+	
+	public long getMobileNumber() {
+	   return mobileNumber;
+	}
 
-public Customers(String customerName, String address, int customerId, String plan, long mobileNumber) {
-   this.customerName = customerName;
-   this.address = address;
-   this.customerId = customerId;
-   this.plan = plan;
-   this.mobileNumber = mobileNumber;
+	@Override
+	public String toString() {
+	   return "Customer [Name=" + customerName + ", Address=" + address + 
+	          ", ID=" + customerId + ", Plan=" + plan +
+	          ", Mobile=" + mobileNumber + "]";
+	}
 }
-
-public String getCustomerName() {
-   return customerName;
-}
-
-public String getAddress() {
-   return address;
-}
-
-public int getCustomerId() {
-   return customerId;
-}
-
-public String getPlan() {
-   return plan;
-}
-
-public long getMobileNumber() {
-   return mobileNumber;
-}
-
-@Override
-public String toString() {
-   return "Customer [Name=" + customerName + ", Address=" + address + 
-          ", ID=" + customerId + ", Plan=" + plan +
-          ", Mobile=" + mobileNumber + "]";
-}
+class Address {
+	private String hno;
+	private String street;
+	private String city;
+	private String pin;
+	
+	public Address(String hno, String street, String city, String pin ) {
+		this.hno=hno;
+		this.street=street;
+		this.city=city;
+		this.pin=pin;
+	}
 }
