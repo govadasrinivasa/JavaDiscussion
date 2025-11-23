@@ -2,6 +2,7 @@ package com.jt.utility;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class LinkedListTest {
 
@@ -27,7 +28,8 @@ public class LinkedListTest {
 		System.out.println("First element "+list.getFirst());
 		
 		System.out.println("Initial LinkedList "+list);
-		Queue<String> queue = list;
+		Queue<String> queue = list; // LIFO
+		Stack<String> stack; // FIFO
 		
 		System.out.println("Queue (FIFO): " + queue);
 

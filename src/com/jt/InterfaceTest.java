@@ -5,6 +5,7 @@ public class InterfaceTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub		
 		Dog d = new Dog(); // instance object d
+		d.sound();
 		Cat c = new Cat(); // instance object c
 		Cow cow = new Cow(); // instance object cow
 		

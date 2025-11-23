@@ -8,18 +8,30 @@ public class ThrowsTest {
     public static void main(String[] args) {
         ThrowsTest example = new ThrowsTest();
 
+//        try {
+//            example.processFile("data.txt"); // Valid case
+//            example.processFile("nonexistent.txt"); // Will throw FileNotFoundException
+//            example.processFile("corrupted.txt"); // Will throw IOException
+//            example.processFile(""); // Will throw IllegalArgumentException (unchecked)
+//        } catch (FileNotFoundException e) {
+//            System.err.println("Caught FileNotFoundException: " + e.getMessage());
+//        } catch (IOException e) {
+//            System.err.println("Caught IOException: " + e.getMessage());
+//        } catch (IllegalArgumentException e) { // Catching unchecked exception
+//            System.err.println("Caught IllegalArgumentException: " + e.getMessage());
+//        } catch (Exception e) { // General catch for any other unexpected exceptions
+//            System.err.println("Caught a general exception: " + e.getMessage());
+//        }
+        
         try {
             example.processFile("data.txt"); // Valid case
             example.processFile("nonexistent.txt"); // Will throw FileNotFoundException
             example.processFile("corrupted.txt"); // Will throw IOException
             example.processFile(""); // Will throw IllegalArgumentException (unchecked)
-        } catch (FileNotFoundException e) {
-            System.err.println("Caught FileNotFoundException: " + e.getMessage());
-        } catch (IOException e) {
-            System.err.println("Caught IOException: " + e.getMessage());
-        } catch (IllegalArgumentException e) { // Catching unchecked exception
-            System.err.println("Caught IllegalArgumentException: " + e.getMessage());
-        } catch (Exception e) { // General catch for any other unexpected exceptions
+        } catch (IOException | IllegalArgumentException e) {
+            System.err.println("Caught IOException or IllegalArgumentException: " + e.getMessage());
+        } 
+        catch (Exception e) { // General catch for any other unexpected exceptions
             System.err.println("Caught a general exception: " + e.getMessage());
         }
     }

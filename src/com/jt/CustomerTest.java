@@ -32,6 +32,9 @@ class Customer { // Parent class
 	String mobile;
 	String email;
 	String address;
+	String transactionType;
+	double billAmount;
+	char gender;
 	int x;
 	float y;
 	double z;
