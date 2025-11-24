@@ -2,38 +2,6 @@ package com.jt.utility;
 
 import java.util.*;
 
-//class Product {
-//
-//    private String productName;
-//    private String category;
-//    private double price;
-//    private int productId;
-//    private double rating;
-//
-//    public Product(String productName, String category, double price, int productId, double rating) {
-//        this.productName = productName;
-//        this.category = category;
-//        this.price = price;
-//        this.productId = productId;
-//        this.rating = rating;
-//    }
-//
-//    public String getProductName() { return productName; }
-//    public String getCategory() { return category; }
-//    public double getPrice() { return price; }
-//    public int getProductId() { return productId; }
-//    public double getRating() { return rating; }
-//
-//    @Override
-//    public String toString() {
-//        return "Product [Name=" + productName +
-//               ", Category=" + category +
-//               ", Price=" + price +
-//               ", ID=" + productId +
-//               ", Rating=" + rating + "]";
-//    }
-//}
-
 public class ProductManager {
 
     public static void main(String[] args) {
