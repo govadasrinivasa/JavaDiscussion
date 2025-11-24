@@ -5,9 +5,7 @@ import java.util.*;
 public class SetsDifferences {
     public static void main(String[] args) {
 
-        // ---------------------------
         // 1. TreeSet
-        // ---------------------------
         TreeSet<Integer> treeSet = new TreeSet<>();
         treeSet.add(40);
         treeSet.add(10);
@@ -17,10 +15,8 @@ public class SetsDifferences {
         System.out.println("TreeSet (Always sorted): " + treeSet);
 
 
-        // ---------------------------
-        // 2. SortedSet (Interface)
-        //    TreeSet implements SortedSet
-        // ---------------------------
+        // 2. SortedSet (Interface) TreeSet implements SortedSet
+        
         SortedSet<Integer> sortedSet = new TreeSet<>(treeSet);
 
         System.out.println("\nSortedSet (headSet, tailSet, subSet available): ");
@@ -29,10 +25,8 @@ public class SetsDifferences {
         System.out.println("SubSet (10 to 30): " + sortedSet.subSet(10, 30));
 
 
-        // ---------------------------
-        // 3. NavigableSet (Interface)
-        //    TreeSet also implements NavigableSet
-        // ---------------------------
+        // 3. NavigableSet (Interface) TreeSet also implements NavigableSet
+        
         NavigableSet<Integer> navigableSet = new TreeSet<>(treeSet);
 
         System.out.println("\nNavigableSet (extra navigation methods):");
