@@ -3,6 +3,7 @@ package com.jt.utility;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Enumeration;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
@@ -56,14 +57,11 @@ public class ProductSortIteration {
         }
 
         // Convert List to Enumeration using Collections.enumeration()
-        Enumeration<Product> en = Collections.enumeration(list);
-
-        System.out.println("\nSorted Product List:");
-        while (en.hasMoreElements()) {
-            System.out.println(en.nextElement());
+        Iterator<Product> iter = list.iterator();
+        while(iter.hasNext()) {
+        	System.out.println(iter.next());
         }
 
         sc.close();
     }
 }
-

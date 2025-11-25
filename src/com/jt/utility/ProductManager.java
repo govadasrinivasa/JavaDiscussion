@@ -13,7 +13,7 @@ public class ProductManager {
         products.add(new Product("Shoes", "Footwear", 2500, 101, 4.0));
         products.add(new Product("Mobile", "Electronics", 45000, 102, 4.7));
         products.add(new Product("Watch", "Accessories", 5000, 104, 3.9));
-
+        
         Scanner sc = new Scanner(System.in);
         int choice;
 
@@ -126,7 +126,7 @@ public class ProductManager {
     // ---------------------- DISPLAY USING ENUMERATION ----------------------
     public static void displayProducts(List<Product> products) {
 
-        System.out.println("\n======= PRODUCT LIST =======");
+        System.out.println(" ======= "+products.size()+ " PRODUCTS LIST =======");
 
         Enumeration<Product> en = Collections.enumeration(products);
 
