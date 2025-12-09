@@ -1,5 +1,7 @@
 package com.jt.lambda;
 
+import com.jt.Order;
+
 public class ListForEach {
 
 	public static void main(String args[]) {

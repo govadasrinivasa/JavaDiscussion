@@ -8,7 +8,7 @@ public class TypeConversionTest {
 
         int intVal = 100;
         long longVal = intVal;          // int → long (implicit)
-        float floatVal = longVal;       // long → float (implicit)
+        float floatVal = longVal;       // long → float (explicit)
 
         System.out.println("int value: " + intVal);
         System.out.println("long value (int → long): " + longVal);

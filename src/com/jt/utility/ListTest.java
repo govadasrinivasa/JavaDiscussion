@@ -32,10 +32,10 @@ public class ListTest {
 		list.add("Bengaluru");
 		list.add("Kolkata");
 		
-//		list.forEach(l -> System.out.println(l));
-//		list.addFirst("NewDelhi");
-//		System.out.println();
-//		list.forEach(l -> System.out.println(l));
+		list.forEach(l -> System.out.println(l));
+		list.addFirst("NewDelhi");
+		System.out.println();
+		list.forEach(l -> System.out.println(l));
 		
 		StringTokenizer stringTokenizer = new StringTokenizer("Languages -- Java,"
 				+ "multi-threading,"

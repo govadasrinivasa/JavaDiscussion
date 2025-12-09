@@ -7,7 +7,6 @@ public class StreamStateDemo {
 
     public static void main(String[] args) {
 
-//        List<Integer> numbers = IntStream.rangeClosed(1, 20).boxed().collect(Collectors.toList());
         List<Integer> numbers = Arrays.asList(6,4,7,2,9,14,12);
 
         System.out.println("----- Stateless Operation (filter) - Sequential -----");

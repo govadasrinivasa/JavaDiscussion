@@ -1,31 +1,22 @@
 package com.jt;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class OperatorsTest {
 
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		// logical 
-		// > < >= <= 
-		// relational
-		// == !=
-		// arithmetic
-		// + - % / *
-		// conditional
-		// && ||
-		// assignment
-		// += -= ++ --
-		// Postfix - ++ --
-		// Prefix ++ -- 
-		// ternary
-		// ?
+		Order order = new Order();
+		Employee emp = new Employee();
+		List<Employee> emps = new ArrayList<Employee>();
+		emps.add(emp);
 		
-//		if("RAJA" == "raja") {
-//			System.out.println(true);
-//		}else if("RAJA" != "raja") {
-//			System.out.println(false);
-//		}
+		List elements = new ArrayList();
+		elements.add("Srinivas");
+		elements.add(101);
+		
+		// TODO Auto-generated method stub
 		
 		String city = "PUNE";
 		String mycity = "pune";
@@ -45,7 +36,12 @@ public class OperatorsTest {
 		boolean passed = (marks > 60) ? true: false;
 		System.out.println(passed);
 	}
-	
-	
-
+}
+class Employee {
+	private String empName;
+	private String empId;
+	private double salary;
+	private String dept;
+	private char gender;
+	private String age;
 }

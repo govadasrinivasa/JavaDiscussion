@@ -31,6 +31,7 @@ public class StringTypesTest {
         sbf.append(" World");  // Thread-safe operations
 
         System.out.println("StringBuffer content: " + sbf);
+        System.out.println("Length : " + sbf.length());  // Shows dynamic capacity
         System.out.println("Capacity: " + sbf.capacity());
 
 

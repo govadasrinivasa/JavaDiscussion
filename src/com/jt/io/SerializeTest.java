@@ -1,13 +1,15 @@
 package com.jt.io;
 
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 public class SerializeTest {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException {
 		
 		Address address = new Address("Bangalore", "India");
         Employee emp = new Employee(101, "John Doe", 90000.50, address);
@@ -17,6 +19,12 @@ public class SerializeTest {
         	ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("employee.ser"));
             oos.writeObject(emp);
             System.out.println("✅ Object Serialized Successfully!");
+            oos.close();
+            
+            ObjectInputStream oos2 = new ObjectInputStream(new FileInputStream("employee.ser"));
+            Employee emp2 = (Employee) oos2.readObject();
+            System.out.println(emp2);
+            oos2.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
