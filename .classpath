@@ -7,27 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="test"/>
-	<classpathentry kind="lib" path="C:/Users/USER/OneDrive/Documents/sts-4.23.1.RELEASE/plugins/junit-jupiter-api_5.10.2.jar">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/USER/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2.jar" sourcepath="C:/Users/USER/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.2/junit-jupiter-api-5.12.2-sources.jar">
-		<attributes>
-			<attribute name="test" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.junit.jupiter"/>
-			<attribute name="maven.artifactId" value="junit-jupiter-api"/>
-			<attribute name="maven.version" value="5.12.2"/>
-			<attribute name="maven.scope" value="test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/USER/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/USER/OneDrive/Documents/sts-4.23.1.RELEASE/plugins/junit-jupiter-engine_5.10.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5">
 		<attributes>
 			<attribute name="module" value="true"/>
