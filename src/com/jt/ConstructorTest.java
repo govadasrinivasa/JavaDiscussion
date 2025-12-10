@@ -103,6 +103,7 @@ class MyClass extends MyStudents {
 	
 	public MyClass(String className, int rno, String name, char gender){
 		// TODO Auto-generated constructor stub
+		//super(rno, name, gender);
 		this.className = className;
 		super.rno = rno;
 		super.name = name;

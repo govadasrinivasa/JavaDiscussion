@@ -35,12 +35,20 @@ class Customer { // Parent class
 	String transactionType;
 	double billAmount;
 	char gender;
-	int x;
-	float y;
-	double z;
-	char a;
-	long l;
-	
+
+	public Customer(String cname, String mobile, String email, String address, String transactionType, double billAmount, char gender) {
+		
+		this.cname=cname;
+		this.mobile=mobile;
+		this.email=email;
+		this.address=address;
+		this.transactionType=transactionType;
+		this.billAmount=billAmount;
+		this.gender=gender;
+	}
+	public Customer() {
+		// TODO Auto-generated constructor stub
+	}
 	public String getCname() {
 		return cname;
 	}
@@ -73,4 +81,20 @@ class Billing extends Customer {
 	int qty;
 	double price;
 	Date doe;
+	
+	public double calculateBill(Order order) {
+        return order.calculateTotal();
+    }
+
+    public void payBill(Customer customer, Order order) {
+        System.out.println("----- BILL PAYMENT -----");
+        System.out.println(customer);
+        System.out.println(order);
+        System.out.println("Total Bill Amount: " + calculateBill(order));
+        System.out.println("Payment Successful!");
+    }
+    Integer i = Integer.valueOf(1000);
+    int ii = i;
+    Integer iii = ii;
 }
+
