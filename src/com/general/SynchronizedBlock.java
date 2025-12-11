@@ -18,11 +18,11 @@ class Task {
     }
 }
 
-class WorkerThread extends Thread {
+class WorkerThreads extends Thread {
 
     private Task task;
 
-    public WorkerThread(String name, Task task) {
+    public WorkerThreads(String name, Task task) {
         super(name);
         this.task = task;
     }
