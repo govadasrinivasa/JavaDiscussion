@@ -66,6 +66,8 @@ public class CustomerSorter {
      }
 
      sc.close();
+     Thread mainThread = Thread.currentThread();
+		System.out.println(mainThread.getName());
  }
 }
 

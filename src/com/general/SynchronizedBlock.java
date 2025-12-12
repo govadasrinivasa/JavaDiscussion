@@ -8,7 +8,7 @@ class Task {
                 System.out.println(threadName + " → " + i);
 
                 try {
-                    Thread.sleep(400);  // simulate work
+                    Thread.sleep(1000);  // simulate work
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -18,11 +18,11 @@ class Task {
     }
 }
 
-class WorkerThread extends Thread {
+class WorkerThreads extends Thread {
 
     private Task task;
 
-    public WorkerThread(String name, Task task) {
+    public WorkerThreads(String name, Task task) {
         super(name);
         this.task = task;
     }
@@ -40,17 +40,20 @@ public class SynchronizedBlock {
         Task sharedTask = new Task();   // one shared object
 
         // Creating 5 threads
-        Thread t1 = new WorkerThread("Thread-1", sharedTask);
-        Thread t2 = new WorkerThread("Thread-2", sharedTask);
-        Thread t3 = new WorkerThread("Thread-3", sharedTask);
-        Thread t4 = new WorkerThread("Thread-4", sharedTask);
-        Thread t5 = new WorkerThread("Thread-5", sharedTask);
+        Thread t1 = new WorkerThreads("Thread-1", sharedTask);
+        Thread t2 = new WorkerThreads("Thread-2", sharedTask);
+        Thread t3 = new WorkerThreads("Thread-3", sharedTask);
+        Thread t4 = new WorkerThreads("Thread-4", sharedTask);
+        Thread t5 = new WorkerThreads("Thread-5", sharedTask);
 
         // Start all threads
+        long startTime = System.currentTimeMillis();
         t1.start();
         t2.start();
         t3.start();
         t4.start();
         t5.start();
+        long endTime = System.currentTimeMillis();
+        System.out.println("Total Time = "+(endTime - startTime));
     }
 }
