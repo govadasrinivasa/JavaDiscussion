@@ -22,6 +22,7 @@ public class GFC {
 class Thread2 extends Thread {
 	
 	int total;
+	
 	@Override
 	public void run() {
 		synchronized (this) {

@@ -5,16 +5,17 @@ public class VolatileTest {
 	public static void main(String[] args) throws InterruptedException {
 		// Volatile test
         VolatileCounter volatileCounter = new VolatileCounter();
-        Thread v1 = new VolatileThread(volatileCounter);
-        Thread v2 = new VolatileThread(volatileCounter);
+        VolatileThread v1 = new VolatileThread(volatileCounter);
+        VolatileThread v2 = new VolatileThread(volatileCounter);
 
         v1.start();
         v2.start();
         v1.join();
         v2.join();
 
-        System.out.println("Volatile Count (Expected 2000): "
-                + volatileCounter.count);
+        System.out.println("Volatile Count (Expected 2000): " + volatileCounter.count);
+        System.out.println(v1.counter.count);
+        System.out.println(v2.counter.count);
 	}
 
 }

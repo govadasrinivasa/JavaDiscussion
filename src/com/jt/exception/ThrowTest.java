@@ -43,6 +43,7 @@ public class ThrowTest {
             	myStack.peek();
         } catch (EmptyStackException e) {
             System.out.println("Caught EmptyStackException when peeking: " + e.getMessage());
+            
         }
     }
 }
