@@ -46,10 +46,10 @@ class ControlledThread extends Thread {
 public class ThreadDemo {
     public static void main(String[] args) {
 
-        ControlledThread t1 = new ControlledThread("Worker-1");
-        ControlledThread t2 = new ControlledThread("Worker-2");
+        ControlledThread t1 = new ControlledThread("Thread-1");
+        ControlledThread t2 = new ControlledThread("Thread-2");
 
-        // Set thread priorities
+//         Set thread priorities
         t1.setPriority(Thread.MAX_PRIORITY);
         t2.setPriority(Thread.MIN_PRIORITY);
 
@@ -74,8 +74,8 @@ public class ThreadDemo {
 
             Thread.sleep(1000);
 
-            System.out.println("\nInterrupting Worker-2...");
-            t2.interrupt();
+//            System.out.println("\nInterrupting Worker-2...");
+//            t2.interrupt();
 
             // Check alive status
             System.out.println("\nt1 alive? " + t1.isAlive());
