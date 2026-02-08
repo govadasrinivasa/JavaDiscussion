@@ -10,6 +10,8 @@ import java.io.PrintWriter;
 
 public class CharacterFileReadWrite {
 
+//	private static final Logger LOGGER = LoggerFactory.getLogger(CharacterFileReadWrite.class);
+	
 	public static void main(String[] args) throws IOException {
 		
 		characterRead();
@@ -29,7 +31,7 @@ public class CharacterFileReadWrite {
 				out.write(c);
 			}
 		} catch(IOException e) {
-			
+//			LOGGER.error("");
 		}finally {
 			if(in != null)
 				in.close();
